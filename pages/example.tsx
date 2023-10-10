@@ -22,7 +22,7 @@ export default function Todo() {
               className="w-full border rounded-lg flex flex-row items-center justify-between p-4"
             >
               <h2 className="text-xl font-semibold">{todo}</h2>
-              <Button  leftSection={ <ActionIcon size={42} variant="default" style={{ color: "white", background: "none",border: "none" }}> <IconTrash/> </ActionIcon>} onClick= {() => deleteTodo(index)}bg="red">Delete</Button>
+              <Button onClick= {() => deleteTodo(index)}bg="red" rightSection={<IconTrash/> }>Delete </Button>
             </div>
           ))}
         </div>
