@@ -12,6 +12,7 @@ export default function Home() {
         <Board title="Frontend">
           <List.Item>
             Explore this project and try to create your own React components
+            
           </List.Item>
           <List.Item>
             Create a functional todo list in another page{" "}
