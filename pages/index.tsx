@@ -1,7 +1,6 @@
 import { List, Title } from "@mantine/core";
 import classes from "@/styles/index.module.css";
 import { Board, Link } from "@/components";
-
 export default function Home() {
   return (
     <div className="h-screen w-screen flex flex-col items-center md:justify-center gap-8 py-4">

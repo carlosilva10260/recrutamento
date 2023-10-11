@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { updateLanguageServiceSourceFile } from "typescript";
 
 export function useTodo(initialItems?: string[]) {
   const [todos, setTodos] = useState<string[]>(initialItems || []);
@@ -28,6 +29,13 @@ export function useTodo(initialItems?: string[]) {
       setTodos([]);
       setNextTodoNumber(1);
     };
+    const updateN = () => {
+      // Create a new array to store the updated todos
+      const updatedTodos = todos.map((todo, index) => {
+         return `Todo #${index + 1}`;
+      });
+      setTodos(updatedTodos);
+    }
   
   
   
@@ -37,5 +45,6 @@ export function useTodo(initialItems?: string[]) {
     addTodo: addItem,
     deleteTodo:removeItem,
     deleteAll:removeAll,
+    updateNs:updateN,
   };
 }
