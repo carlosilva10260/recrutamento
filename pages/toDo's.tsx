@@ -26,7 +26,7 @@ export default function Todo() {
           {todos.map((todo, index) => (
             <div
               key={index}
-              className="w-full border bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-lg flex flex-row items-center justify-between p-4"
+              className="w-full border bg-gradient-to-r from-blue-500 to-grey-100 rounded-lg flex flex-row items-center justify-between p-4"
             >
               <h2 className="text-xl font-semibold">{todo}</h2>
               <Button onClick= {() => deleteTodo(index)}bg="red" rightSection={<IconTrash/> }>Delete </Button>
